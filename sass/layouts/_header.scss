@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        & img {
+            width: 50%;
+        }      
+    }
+    &__location {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: $background-dark_grey;
+        & i {
+            margin-right: 20px;
+        }
+        & p {
+            font-weight: bold;
+        }
+    }
+}
