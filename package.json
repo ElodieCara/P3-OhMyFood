@@ -1,0 +1,22 @@
+{
+  "name": "p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass" : "sass --watch ./sass/style.scss:./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElodieCara/P3-OhMyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElodieCara/P3-OhMyFood/issues"
+  },
+  "homepage": "https://github.com/ElodieCara/P3-OhMyFood#readme",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}
