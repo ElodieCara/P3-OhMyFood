@@ -1,0 +1,16 @@
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width:map-get($breakpoints, desktop)) {
+        @content;
+    }
+    
+}
+
+@mixin zoom {
+    transform: scale(2);
+}
