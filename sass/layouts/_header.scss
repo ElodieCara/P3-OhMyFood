@@ -3,27 +3,34 @@
     justify-content: center;
     align-items: stretch;
     flex-direction: column;
+
     &__logo {
         display: flex;
         justify-content: center;
         box-shadow: 0px 3px 3px #CFCFCF;
         padding: 5px;
         position: relative;
+
         & img {
             width: 37%;
-        }      
+        }
     }
+
     &__location {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         background-color: $background-dark_grey;
+
         & i {
             margin-right: 20px;
         }
+
         & p {
             font-weight: bold;
         }
+
+
     }
 }

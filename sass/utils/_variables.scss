@@ -4,3 +4,8 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $background-dark_grey: #EAEAEA;
 $background-light_grey : #F6F6F6; 
+
+$breakpoints: (
+    desktop: 1200px,
+    tablet: 800px,
+);

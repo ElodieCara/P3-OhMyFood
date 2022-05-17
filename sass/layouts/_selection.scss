@@ -1,0 +1,68 @@
+.selection {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+    & ol {
+        display: flex;
+        flex-direction: column;
+        counter-reset: section;
+        padding: 0;
+        margin: 5px;
+
+        @include tablet {
+            flex-direction: row;
+        }
+
+        @include desktop {
+            flex-direction: row;
+        }
+
+        & li {
+            width: 400px;
+            height: 80px;
+            background-color: $light-main-color;
+            margin: 10px;
+            border-radius: 20px;
+            list-style-type: none;
+            counter-increment: section;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            justify-content: left;
+            @include shadow;
+
+            &::before {
+                content: counter(section);
+                margin-right: 8px;
+                padding: 8px 12px 9px;
+                background: $primary-color;
+                border-radius: 30px;
+                font-weight: bold;
+                font-size: 0.8em;
+                color: white;
+                position: absolute;
+                left: -15px;
+            }
+
+            &:hover {
+                background-color: $primary-color;
+                background-color: $color-hover;
+            }
+            
+            & i {
+                padding: 25px;
+                margin: 10px;
+                font-size: 23px;
+                color: grey;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+
+        }
+    }
+}
