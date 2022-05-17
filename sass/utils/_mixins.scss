@@ -8,9 +8,29 @@
     @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width:map-get($breakpoints, desktop)) {
         @content;
     }
-    
+
+}
+
+@mixin mobile {
+    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, tablet)) {
+        @content;
+    }
 }
 
 @mixin zoom {
-    transform: scale(2);
+    transform: scale(1.2);
+}
+
+@mixin shadow {
+    box-shadow: 0px 5px 20px #999;
+    transition: all .5s;
+}
+
+@mixin hover($color) {
+    @if (hue($primary-color) < 180) {
+        $color: adjust-hue($primary-color, 30);
+    } @else {
+        $color: adjust-hue($primary-color, -60);
+    }
+    background: $primary-color;
 }
