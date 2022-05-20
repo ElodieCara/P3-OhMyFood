@@ -1,0 +1,43 @@
+.cards-restaurants {
+    width: calc(400px - 30px);
+    height: auto;
+    padding: 0;
+    margin: 0 15px 30px 15px;
+    background: #FFFFFF;
+    border: 5px solid #997;
+}
+
+a {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    // border-radius: calc(var(--curve)*1px); définir curve
+}
+
+.cards-restaurants__image {
+    // border-radius: calc(var(--curve)*1px); définir curve
+}
+
+.cards-restaurants__image span {
+    visibility: hidden;
+}
+
+.cards-restaurants__image--tagline {
+    position: relative;
+}
+
+.cards-restaurants__image--tagline span {
+    visibility: visible;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    display: inline-block;
+    background: #1245;
+    color: #000;
+    padding: 3px 14px;
+}

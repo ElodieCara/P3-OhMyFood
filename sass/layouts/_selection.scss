@@ -32,6 +32,7 @@
             position: relative;
             justify-content: left;
             text-decoration: none;
+            
             @include shadow;
 
             &::before {
@@ -56,6 +57,8 @@
         & li {
             color: black;
             font-weight: bold;
+            
+           
 
         }
 

@@ -1,18 +1,1 @@
-/* Error: "+" and "-" must be surrounded by whitespace in calculations.
- *   ,
- * 2 |     width: calc(25% -30px);
- *   |                     ^
- *   '
- *   sass\composants\_cards.scss 2:21  @import
- *   sass\style.scss 8:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: "+" and "-" must be surrounded by whitespace in calculations.\a   \2577 \a 2 \2502      width: calc(25% -30px);\d\a   \2502                      ^\a   \2575 \a   sass\\composants\\_cards.scss 2:21  @import\a   sass\\style.scss 8:9               root stylesheet';
-}
+@import"https://fonts.googleapis.com/css2?family=Shrikhand&display=swap";@import"https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";@import"https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";a{text-decoration:none}img{object-fit:cover}*,*::before,*::after{box-sizing:border-box}body{margin:0;font-family:"Roboto",sans-serif}.header{display:flex;justify-content:center;align-items:stretch;flex-direction:column}.header__logo{display:flex;justify-content:center;box-shadow:0px 3px 3px #cfcfcf;padding:5px;position:relative}.header__logo img{width:37%}.header__location{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;background-color:#e1e1e1}.header__location i{margin-right:20px}.header__location p{font-weight:bold}.explore{text-align:center;padding:25px;background-color:#f3f3f3}.explore__btn{display:flex;justify-content:center;transition:transform 200ms}.explore__btn__purple{display:flex;justify-content:center;align-items:center;width:220px;height:50px;margin-bottom:30px;border-radius:30px;background-image:linear-gradient(to top left, #9356DC, #FF79DA);transition:transform 500ms;color:#fff;font-weight:bold;box-shadow:0px 5px 20px #999;transition:all .5s}.explore__btn__purple:hover{transform:scale(1.2)}.selection{display:flex;flex-direction:column;padding:25px}.selection ol{display:flex;flex-direction:column;counter-reset:section;padding:0;margin:5px}@media screen and (min-width: 800px)and (max-width: 1200px){.selection ol{flex-direction:row}}@media screen and (min-width: 1200px){.selection ol{flex-direction:row}}.selection ol a{width:100%;height:80px;background-color:#f3f3f3;margin:10px;border-radius:20px;list-style-type:none;counter-increment:section;display:flex;flex-direction:row;align-items:center;position:relative;justify-content:left;text-decoration:none;box-shadow:0px 5px 20px #999;transition:all .5s}.selection ol a::before{content:counter(section);margin-right:8px;padding:8px 12px 9px;background:#9356dc;border-radius:30px;font-weight:bold;font-size:.8em;color:#fff;position:absolute;left:-15px}.selection ol a:hover{background-color:#9356dc;background-color:#f2eafb}.selection ol li{color:#000;font-weight:bold}.selection ol i{padding:25px;margin:10px;font-size:23px;color:gray}.selection ol i:hover{color:#9356dc}.cards-restaurants{width:370px;height:auto;padding:0;margin:0 15px 30px 15px;background:#fff;border:5px solid #997}a{width:100%;height:auto;margin-bottom:0}img{width:100%;height:auto}.cards-restaurants__image span{visibility:hidden}.cards-restaurants__image--tagline{position:relative}.cards-restaurants__image--tagline span{visibility:visible;position:absolute;top:30px;right:5px;display:inline-block;background:rgba(17,34,68,.3333333333);color:#000;padding:3px 14px}/*# sourceMappingURL=style.css.map */
