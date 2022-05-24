@@ -2,20 +2,19 @@
 $primary-color: #9356DC ;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-// $background-dark_grey: #EAEAEA;
-// $background-light_grey: #F6F6F6;
+$dark-tertiary-color: darken($tertiary-color, 38%);
+
 
 $base-color: grey;
 $light-header-color: lighten(grey, 38%);
-$dark-main-color: darken(grey, 45%) ;
+$dark-main-color: darken(grey, 30%) ;
 $light-main-color: lighten(grey, 45%);
 
-
+/* hover-btn-explore*/
 $color-hover: lighten($primary-color, 35%);
 
 
 $breakpoints: (
     desktop: 1200px,
     tablet: 800px,
-    mobile: 765px,
 );
