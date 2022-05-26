@@ -1,6 +1,6 @@
 .footer {
     color: white;
-    
+
     padding: 25px;
 
     &__logo {
@@ -23,11 +23,17 @@
             &--icon {
                 font-weight: 600;
                 line-height: 35px;
+
                 & i {
                     font-size: 16px;
                     width: 2rem;
                 }
             }
         }
+    }
+
+    &__container {
+
+        @include container;
     }
 }

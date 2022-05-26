@@ -1,5 +1,6 @@
 .cards-restaurants {
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding: 0;
     margin-bottom: 30px;
@@ -7,8 +8,11 @@
     @include shadow;
     border-radius: 5%;
 
-    @include tablet {
-        width: 350px;
+    @include tablet;
+        flex: 0 0 47%;
+
+    @include desktop {
+        flex: 0 0 48%;
     }
 
     &__link {
@@ -19,7 +23,6 @@
 
     &__image {
         border-radius: 5% 0 0;
-
         overflow: hidden;
         height: 225px;
         // border-radius: calc(var(--curve)*1px); définir curve
@@ -63,17 +66,17 @@
         height: auto;
 
         &__name {
-           display: block;
-           justify-content: center;
+            display: block;
+            justify-content: center;
         }
 
         &__notation {
             padding: 15px;
 
+            @include heart-hover;
+
             & i {
-                font-size: 35px;
-                color: black;
-                
+                @include heart;
             }
         }
     }

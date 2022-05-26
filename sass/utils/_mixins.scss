@@ -1,3 +1,5 @@
+/*Breakpoints*/
+
 @mixin desktop {
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;
@@ -11,11 +13,30 @@
 
 }
 
-// @mixin mobile {
-//     @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, tablet)) {
-//         @content;
-//     }
-// }
+/*Container*/
+
+@mixin container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    
+}
+
+/* Boutons */
+
+@mixin btn-purple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-image: linear-gradient(to top left, $primary-color, $secondary-color);
+    transition: transform 500ms;
+    color: white;
+    font-weight: bold;
+}
 
 @mixin zoom {
     transform: scale(1.2);
@@ -26,12 +47,21 @@
     transition: all .5s;
 }
 
-// @mixin hover($color) {
-//     @if (hue($primary-color) < 180) {
-//         $color: adjust-hue($primary-color, 30);
-//     } @else {
-//         $color: adjust-hue($primary-color, -60);
-//     }
-//     background: $primary-color;
-// }
+/*Icon heart*/
+
+@mixin heart {
+    font-size: 35px;
+    color: black;
+}
+
+@mixin heart-hover {
+    :hover {
+        background: -webkit-linear-gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+    }
+}
+
 
