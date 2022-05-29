@@ -1,0 +1,39 @@
+.main--menu {
+    background-color: $light-main-color;
+
+
+    .menu-cover {
+        position: relative;
+    }
+
+    .container__menu {
+        width: 100%;
+        padding: 25px;
+        position: relative;
+        top: -3rem;
+        
+        border-radius: 3rem 3rem 0 0;
+        background-color: $light-main-color;
+
+        &__title {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include heart-hover;
+        }
+
+
+
+        & i {
+            @include heart;
+            padding: 0 35px 0 0;
+
+           
+        }
+
+        
+
+    }
+}

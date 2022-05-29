@@ -5,10 +5,9 @@
     padding: 25px;
     background-color: $light-main-color;
 
-    &__container {
-        
-        @include container;
-    }
+    // &__container {
+    //     @include container;
+    // }
 
     &__btn {
         display: flex;
@@ -34,7 +33,7 @@
     flex-direction: column;
     padding: 25px;
 
-    @include container;
+    // @include container;
 
     @include desktop {
         padding: 0 0 25px 0;
@@ -126,9 +125,9 @@
     flex-direction: column;
     background-color: $light-main-color;
 
-    &__container {
-        @include container;
-    }
+    // &__container {
+    //     @include container;
+    // }
 
     & h2 {
         display: inline-block;
@@ -154,7 +153,8 @@
             flex-wrap: wrap;
             justify-content: space-between;
 
-            @include container;
+            //     @include container;
+            // }
         }
     }
 }
