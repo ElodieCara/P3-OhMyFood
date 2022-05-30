@@ -104,13 +104,25 @@
         padding: 3%;
         margin-bottom: 1rem;
 
+
         &>* {
             margin: 0;
             padding: 2%;
         }
 
-    }
 
+        &__anim {
+            width: 50px;
+            height: 50px;
+            background: $tertiary-color;
+
+            & i {
+                padding: 50px;
+                background-color: $tertiary-color;
+                color: white;
+            }
+        }
+    }
 }
 
 .btn__purple {
