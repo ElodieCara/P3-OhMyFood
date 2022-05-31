@@ -1,0 +1,160 @@
+/*-- Explore -- */
+
+.explore {
+    text-align: center;
+    padding: 25px;
+    background-color: $light-main-color;
+
+    // &__container {
+    //     @include container;
+    // }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        transition: transform 200ms;
+
+        &__purple {
+            @include btn-purple;
+            @include shadow;
+
+            &:hover {
+                @include zoom;
+            }
+        }
+    }
+}
+
+
+/*-- Selection --*/
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+    // @include container;
+
+    @include desktop {
+        padding: 0 0 25px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        counter-reset: section;
+        padding: 0;
+        margin: 0;
+
+        @include tablet {
+            flex-direction: row;
+        }
+
+        @include desktop {
+            flex-direction: row;
+        }
+
+        // li:hover > i {
+        //     background-color: $color-hover;
+        // }
+
+        &__link {
+            width: 100%;
+            height: 80px;
+            background-color: $light-main-color;
+            margin: 10px;
+            border-radius: 20px;
+            list-style-type: none;
+            counter-increment: section;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            justify-content: left;
+            text-decoration: none;
+
+            @include shadow;
+
+            &::before {
+                content: counter(section);
+                margin-right: 8px;
+                padding: 8px 12px 9px;
+                background: $primary-color;
+                border-radius: 30px;
+                font-weight: bold;
+                font-size: 0.8em;
+                color: white;
+                position: absolute;
+                left: -15px;
+            }
+
+            &:hover {
+                background-color: $color-hover;
+
+                & i {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        & li {
+            color: black;
+            font-weight: bold;
+            width: 100%;
+
+            @include tablet {
+                font-size: 80%;
+            }
+
+            & i {
+                padding: 25px;
+                margin: 10px;
+                font-size: 23px;
+                color: $base-color;
+            }
+        }
+    }
+}
+
+/*-- Restaurants --*/
+
+.restaurants {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: $light-main-color;
+
+    // &__container {
+    //     @include container;
+    // }
+
+    & h2 {
+        display: inline-block;
+        height: 48px;
+        width: 100%;
+    }
+
+    .home__all__cards__restaurants {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            // width: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @include desktop {
+            // width: 100%;
+            // max-width: 1400px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            //     @include container;
+            // }
+        }
+    }
+}
