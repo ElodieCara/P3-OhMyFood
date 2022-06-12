@@ -4,6 +4,7 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 img {
@@ -14,14 +15,14 @@ img {
 h3 {
     color: black;
     font-size: 20px;
-    
-    
+
+
 }
 
 .header p {
     color: black;
     font-size: 20px;
-    
+
 }
 
 /* Page Menu */
@@ -29,7 +30,7 @@ h3 {
 
 .container__menu {
     h3 {
-        font-family: "Shrikhand";
+        font-family: "Shrikhand", sans-serif;
         font-size: 30px;
         font-weight: 500;
     }
@@ -44,25 +45,50 @@ h3 {
 
     h5 {
         font-size: 18px;
-        
         width: 100%;
         height: auto;
         max-height: 200px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        // margin: 0;
-        // padding-top: 2%;
+        margin: 0;
+        padding: 0;
     }
 
     p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         font-size: 16px;
-        // margin: 0;
+        margin: 0;
+        padding: 0;
     }
 
     span {
         font-weight: bold;
     }
+
+    @include desktop {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    @include tablet {
+        h4 {
+            font-size: 16px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
 }
-
-

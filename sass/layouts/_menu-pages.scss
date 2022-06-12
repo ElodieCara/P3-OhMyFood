@@ -1,19 +1,16 @@
 .main--menu {
-    background-color: $light-main-color;
-
-
     .menu-cover {
         position: relative;
+        margin-bottom: -3rem;
+        z-index: -2;
     }
 
     .container__menu {
         width: 100%;
         padding: 25px;
-        position: relative;
-        top: -3rem;
-
         border-radius: 3rem 3rem 0 0;
         background-color: $light-main-color;
+        // @include container;
 
         &__title {
             width: 100%;
@@ -21,13 +18,78 @@
             justify-content: space-between;
             align-items: center;
 
-            @include heart-hover;
+        }
 
+    }
 
-            & i {
-                @include heart;
-                padding: 0 35px 0 0;
+    @include desktop {
+
+        .main--menu {
+            background-color: white;
+        }
+
+        .menu-cover {
+            img {
+                height: 450px;
             }
+        }
+
+        .container__menu {
+            @include container;
+
+
+            .home-all-cards-menu {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+
+            .menu {
+                width: 30%;
+            }
+
+
+        }
+    }
+
+    @include tablet {
+        .menu-cover {
+            height: 450px;
+        }
+
+        .home-all-cards-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .container__menu__title {
+            justify-content: space-evenly;
+            gap: 30rem;
+        }
+
+        .menu {
+            width: auto;
+            //     display: flex;
+            //     justify-content: space-between;
+            //     flex-wrap: wrap;
+            //     max-width: 100%;
+            //     gap: 1rem;
+
+
+            //     // &-starter {
+            //     //     display: inline;
+            //     //     max-height: 100%;
+            //     //     width: 30%;
+            //     // }
+
+            &__content {
+                width: 25rem;
+
+                
+            }
+
+
         }
     }
 }

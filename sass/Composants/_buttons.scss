@@ -1,0 +1,73 @@
+/* Button Purple */
+
+.explore {
+    text-align: center;
+    padding: 25px;
+    background-color: $light-main-color;
+
+    &__container {
+        @include container;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        transition: transform 200ms;
+
+        &__purple {
+            @include btn-purple;
+            @include shadow;
+
+            &:hover {
+                @include zoom;
+            }
+        }
+    }
+}
+
+
+/* Icon Heart */
+
+.icon-heart {
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+
+    &--falling {
+        &:hover {
+            color: black;
+            display: inline-block;
+            background: linear-gradient(to left, $primary-color, $secondary-color);
+            background: -webkit-linear-gradient(to left, $primary-color, $secondary-color);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            animation: filling 0.3s ease-in-out;
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes filling {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
