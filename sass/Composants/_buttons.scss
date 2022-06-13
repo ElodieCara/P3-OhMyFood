@@ -1,70 +1,33 @@
 /* Button Purple */
 
-.explore {
-    text-align: center;
-    padding: 25px;
-    background-color: $light-main-color;
+.btn {
+    display: flex;
+    justify-content: center;
+    transition: transform 200ms;
 
-    &__container {
-        @include container;
-    }
+    &__purple {
+        @include btn-purple;
+        @include shadow;
 
-    &__btn {
-        display: flex;
-        justify-content: center;
-        transition: transform 200ms;
-
-        &__purple {
-            @include btn-purple;
-            @include shadow;
-
-            &:hover {
-                @include zoom;
-            }
+        &:hover {
+            @include zoom;
         }
     }
 }
 
+// /* Icon Heart */
 
-/* Icon Heart */
-
-
-
-.icon-heart {
-
+.icon-heart i {
     font-size: 35px;
-    
+    color: black;
     cursor: pointer;
-    position: relative;
-    
 
-    &::before {
-        content: "\f004";
-        font-family: fontAwesome;
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 36px;
-        height: 0;
-        overflow: hidden;
-        transition: 0.5s ease-in-out;
-        background: linear-gradient(to left, $primary-color, $secondary-color);
-        background: -webkit-linear-gradient(to left, $primary-color, $secondary-color);
+    &:hover {
+        background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
-
+        font-weight: bold;
     }
-
-    &:hover::before {
-        height: 100%;
-        
-    }
-
-    & i {
-        font-size: auto;
-        color: inherit;
-        width: 100%;
-    }
-
 }
+

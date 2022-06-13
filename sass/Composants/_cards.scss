@@ -67,15 +67,20 @@
         margin: 0 5%;
         max-width: 100%;
         height: auto;
+        padding: 1%;
 
         &__name {
             display: block;
             justify-content: center;
+            
+            & >* {
+                margin: 0;
+                line-height: 25px;
+            }
         }
 
         &__notation {
             padding: 15px;
-
         }
     }
 }
@@ -125,8 +130,7 @@
         }
 
         &__price {
-            float: right;
-            right: 50px;
+            
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -157,7 +161,7 @@
 
             }
         }
-        
+
         &:hover {
             cursor: pointer;
 

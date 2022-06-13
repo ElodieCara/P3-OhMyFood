@@ -1,3 +1,24 @@
+/* Explore */
+
+.explore {
+    text-align: center;
+    padding: 25px;
+    background-color: $light-main-color;
+
+    &__container {
+        @include container;
+    }
+}
+
+@include desktop {
+    .explore {
+        &__container {
+            @include container-menu;
+        }
+    }
+}
+
+
 /*-- Selection --*/
 
 .selection {
@@ -7,9 +28,6 @@
 
     @include container;
 
-    @include desktop {
-        padding: 0 0 25px 0;
-    }
 
     &__list {
         display: flex;
@@ -17,18 +35,11 @@
         counter-reset: section;
         padding: 0;
         margin: 0;
+        gap: 2%;
 
         @include tablet {
             flex-direction: row;
         }
-
-        @include desktop {
-            flex-direction: row;
-        }
-
-        // li:hover > i {
-        //     background-color: $color-hover;
-        // }
 
         &__link {
             width: 100%;
@@ -86,6 +97,16 @@
             }
         }
     }
+
+    @include desktop {
+        &__container {
+            @include container-menu;
+        }
+
+        &__list {
+            flex-direction: row;
+        }
+    }
 }
 
 /*-- Restaurants --*/
@@ -110,23 +131,16 @@
     .home-all-cards-restaurants {
         display: flex;
         flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-        @include tablet {
-            // width: auto;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        @include desktop {
-            // width: 100%;
-            // max-width: 1400px;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            //     @include container;
-            // }
+    @include desktop {
+        .restaurants {
+            &__container {
+                @include container-menu;
+            }
         }
     }
 }

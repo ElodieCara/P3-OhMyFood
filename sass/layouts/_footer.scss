@@ -42,10 +42,10 @@
     &__container {
         @include container;
     }
-}
 
-// .footer--menu {
-//    position: absolute;
-//    bottom: 0;
-//    width: 100%;
-// }
+    @include desktop {
+        &__container {
+            @include container-menu;
+        }
+    }
+}

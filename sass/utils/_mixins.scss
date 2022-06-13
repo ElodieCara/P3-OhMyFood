@@ -16,11 +16,16 @@
 /*Container*/
 
 @mixin container {
-    
     width: 100%;
     margin: 0 auto 0 auto;
     position: relative;
     z-index: 1;
+}
+
+@mixin container-menu {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto 0 auto;
 }
 
 /* Boutons */
@@ -97,3 +102,4 @@
 //             opacity: 1;
 //         }
 //     }
+// }
