@@ -14,8 +14,6 @@
         & img {
             max-width: 185px;
         }
-
-
     }
 
     &__location {
@@ -38,7 +36,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: 100px;
+        height: 75px;
         position: relative;
 
         &__icon {
@@ -54,12 +52,10 @@
         }
 
         &__logo {
-            width: 250px;
+            width: 200px;
             display: flex;
             justify-content: center;
 
             }
-
-
     }
 }

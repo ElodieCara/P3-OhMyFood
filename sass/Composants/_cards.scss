@@ -11,8 +11,9 @@
     @include shadow;
     border-radius: 5%;
 
-    @include tablet;
-    flex: 0 0 47%;
+    @include tablet {
+        flex: 0 0 47%;
+    }
 
     @include desktop {
         flex: 0 0 48%;
@@ -28,7 +29,6 @@
         border-radius: 5% 0 0;
         overflow: hidden;
         height: 225px;
-        // border-radius: calc(var(--curve)*1px); définir curve
 
         & img {
             width: 100%;
@@ -76,11 +76,6 @@
         &__notation {
             padding: 15px;
 
-            @include heart-hover;
-
-            & i {
-                @include heart;
-            }
         }
     }
 }
@@ -93,17 +88,7 @@
     height: auto;
     margin-bottom: 3rem;
 
-    @keyframes slideDown {
-        from {
-            transform: translateY(10px);
-            opacity: 0;
-        }
 
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
 
     &__content {
         width: 100%;
@@ -119,11 +104,7 @@
         animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
         animation-fill-mode: both;
         transform: translateY(-53px);
-
-
         @include shadow;
-
-
 
         &__text {
             width: 100%;
@@ -144,12 +125,14 @@
         }
 
         &__price {
+            float: right;
+            right: 50px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             padding: 3%;
-            margin-right: 7px;
-
+            transform: translateX(50px);
+            transition: all .5s ease;
         }
 
         &__icon {
@@ -160,13 +143,11 @@
             background-color: $tertiary-color;
             border-radius: 0 17px 17px 0;
             transform: scaleX(0);
-            transition: all .5s;
+            transition: all .5s ease 0ms;
             padding: 0;
-            // margin-right: -7rem;
             visibility: hidden;
-            opacity: 0;
+            opacity: 1;
             transform-origin: right;
-
 
             & i {
                 color: $tertiary-color;
@@ -176,18 +157,22 @@
 
             }
         }
-
-
+        
         &:hover {
             cursor: pointer;
 
+            .menu__content__price {
+                transform: translateX(0);
+                transition: all .5s ease;
+
+            }
+
             .menu__content__icon {
-                transform-origin: right;
                 visibility: visible;
+                transform-origin: right;
                 opacity: 1;
                 transform: scaleX(1);
-                animation: translate-left 0.5s linear;
-
+                // animation: translate-left 0.5s linear;
             }
 
             i {
@@ -211,11 +196,19 @@
         &--delay-4 {
             animation-delay: 750ms;
         }
+    }
+}
 
-
+@keyframes slideDown {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
     }
 
-
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes tourne {
@@ -256,6 +249,7 @@
     60% {
         transform: scaleX(0.6);
     }
+
     70% {
         transform: scaleX(0.7);
     }
@@ -263,7 +257,7 @@
     80% {
         transform: scaleX(0.8);
     }
-    
+
     90% {
         transform: scaleX(0.9);
     }

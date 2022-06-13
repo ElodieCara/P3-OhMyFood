@@ -16,7 +16,7 @@
 /*Container*/
 
 @mixin container {
-    max-width: 1200px;
+    
     width: 100%;
     margin: 0 auto 0 auto;
     position: relative;
@@ -41,6 +41,8 @@
 
 @mixin zoom {
     transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    opacity: 0.8;
 }
 
 @mixin shadow {

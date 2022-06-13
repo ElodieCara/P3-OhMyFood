@@ -28,46 +28,43 @@
 
 /* Icon Heart */
 
+
+
 .icon-heart {
+
     font-size: 35px;
-    color: black;
+    
     cursor: pointer;
+    position: relative;
+    
 
-    &--falling {
-        &:hover {
-            color: black;
-            display: inline-block;
-            background: linear-gradient(to left, $primary-color, $secondary-color);
-            background: -webkit-linear-gradient(to left, $primary-color, $secondary-color);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 900;
-            animation: filling 0.3s ease-in-out;
-            opacity: 1;
-        }
-    }
-}
+    &::before {
+        content: "\f004";
+        font-family: fontAwesome;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 36px;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+        background: linear-gradient(to left, $primary-color, $secondary-color);
+        background: -webkit-linear-gradient(to left, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
 
-@keyframes filling {
-    0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 0.25;
     }
 
-    50% {
-        opacity: 0.5;
+    &:hover::before {
+        height: 100%;
+        
     }
 
-    75% {
-        opacity: 0.75;
-    }
-
-    100% {
-        opacity: 1;
+    & i {
+        font-size: auto;
+        color: inherit;
+        width: 100%;
     }
 
 }

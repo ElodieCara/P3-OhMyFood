@@ -15,8 +15,6 @@ img {
 h3 {
     color: black;
     font-size: 20px;
-
-
 }
 
 .header p {
@@ -27,12 +25,12 @@ h3 {
 
 /* Page Menu */
 
-
 .container__menu {
     h3 {
         font-family: "Shrikhand", sans-serif;
         font-size: 30px;
         font-weight: 500;
+        margin: 0;
     }
 
     h4 {
@@ -76,19 +74,19 @@ h3 {
 
     @include tablet {
         h4 {
-            font-size: 16px;
+            font-size: 20px;
         }
 
         h5 {
-            font-size: 14px;
+            font-size: 18px;
         }
 
         p{
-            font-size: 12px;
+            font-size: 16px;
         }
 
         span {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 }
