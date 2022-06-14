@@ -135,13 +135,12 @@
             flex-direction: column;
             justify-content: flex-end;
             padding: 3%;
-            transform: translateX(50px);
             transition: all .5s ease;
         }
 
         &__icon {
             width: 90px;
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             background-color: $tertiary-color;
@@ -172,6 +171,7 @@
             }
 
             .menu__content__icon {
+                display: flex;
                 visibility: visible;
                 transform-origin: right;
                 opacity: 1;
