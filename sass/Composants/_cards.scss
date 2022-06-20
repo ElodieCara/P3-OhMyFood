@@ -1,4 +1,4 @@
-/* Cards Page d'accueil */
+/* Cards Home */
 
 
 .cards-restaurants {
@@ -115,29 +115,26 @@
             display: flex;
             flex-wrap: wrap;
             padding: 3%;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-
+            @include text-hidden;
 
             &>* {
                 margin: 0;
                 padding: 0%;
             }
-
         }
 
         &__price {
-
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             padding: 3%;
             transition: all .5s ease;
+            transform: translateX(15px);
         }
 
         &__icon {
-            width: 0;
+            width: 0%;
+            transform: translateX(70px);
             display: flex;
             background-color: $tertiary-color;
             transition: all 1s;
@@ -148,19 +145,23 @@
                 border-radius: 50%;
                 padding: 5%;
                 margin: auto;
-
             }
         }
 
         &:hover {
             cursor: pointer;
 
+            .menu__content__price {
+                transform: translateX(0px);
+            }
+
             .menu__content__icon {
                 width: 20%;
+                transform: translateX(0px);
             }
 
             i {
-                animation: tourne 0.9s;
+                animation: tourne 1.4s;
             }
 
         }
@@ -185,7 +186,7 @@
 
 @keyframes slideDown {
     from {
-        transform: translateY(10px);
+        transform: translateY(20px);
         opacity: 0;
     }
 
@@ -196,11 +197,11 @@
 }
 
 @keyframes tourne {
-    0% {
-        transform: rotate(90deg);
+    from {
+        transform: rotate(0deg);
     }
 
-    100% {
+    to {
         transform: rotate(360deg);
     }
 }

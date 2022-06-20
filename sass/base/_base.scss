@@ -17,7 +17,7 @@ footer {
     position: relative;
 }
 
-/* Porgress__container */
+/* Loader */
 
 @keyframes preloader-transition {
     from {
@@ -40,7 +40,7 @@ footer {
     z-index: 99;
     background-color: inherit;
     background-color: $light-main-color;
-    animation: preloader-transition 2s 2s linear both;
+    animation: preloader-transition 1s 1s linear both;
 }
 
 .loader {
@@ -82,8 +82,8 @@ footer {
         border-radius: 50%;
         border: 3px solid transparent;
         border-top-color: $tertiary-color;
-        -webkit-animation: spin 1.5s linear infinite;
-        animation: spin 1.5s linear infinite;
+        -webkit-animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
     }
 }
 

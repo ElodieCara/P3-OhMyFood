@@ -24,9 +24,8 @@
     padding: inherit;
 
     &:hover {
-        animation: fill 0.9s ease-in-out;
+        animation: fill .5s ease-in-out;
         display: inline-block;
-        color: balck;
         background: linear-gradient(to top left, $primary-color, $secondary-color);
         background: -webkit-linear-gradient(to top left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
@@ -37,7 +36,7 @@
 
 @keyframes fill {
     0% {
-        opacity: 0.1;
+        opacity: 0;
     }
 
     50% {
