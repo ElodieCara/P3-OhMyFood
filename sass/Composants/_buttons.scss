@@ -21,13 +21,30 @@
     font-size: 35px;
     color: black;
     cursor: pointer;
+    padding: inherit;
 
     &:hover {
-        background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-        background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        animation: fill 0.9s ease-in-out;
+        display: inline-block;
+        color: balck;
+        background: linear-gradient(to top left, $primary-color, $secondary-color);
+        background: -webkit-linear-gradient(to top left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
     }
 }
 
+@keyframes fill {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
