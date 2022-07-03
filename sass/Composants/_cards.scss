@@ -92,7 +92,7 @@
     max-width: 600px;
     height: auto;
     margin-bottom: 3rem;
-    
+
     &__content {
         width: 100%;
         display: flex;
@@ -129,8 +129,9 @@
             justify-content: flex-end;
             padding: 3%;
             transition: all .5s ease;
-            transform: translateX(15px);
+            transform: translateX(5px);
         }
+
 
         &__icon {
             width: 0%;
